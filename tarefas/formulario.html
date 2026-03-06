@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro do Usuário</title>
+  </head>
+  <body>
+    <h1>CADASTRO DO USUÁRIO</h1>
+
+    <form action="#" method="POST">
+      <fieldset>
+        <legend>Tipo de Atendimento</legend>
+        <label>
+          <input
+            type="radio"
+            name="tipo_atendimento"
+            value="individual"
+            required
+          />
+          Individual
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="tipo_atendimento"
+            value="grupo_terapeutico"
+            required
+          />
+          Grupo Terapêutico
+        </label>
+        <br /><br />
+        <label for="data_cadastro">Data:</label>
+        <input type="date" id="data_cadastro" name="data_cadastro" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>1 - IDENTIFICAÇÃO</legend>
+
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          minlength="3"
+          maxlength="100"
+          required
+        />
+        <br /><br />
+
+        <label for="cpf">CPF (formato: 000.000.000-00):</label>
+        <input
+          type="text"
+          id="cpf"
+          name="cpf"
+          pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+          title="Digite um CPF válido no formato 000.000.000-00"
+          required
+        />
+
+        <label for="rg">RG:</label>
+        <input
+          type="text"
+          id="rg"
+          name="rg"
+          minlength="5"
+          maxlength="20"
+          required
+        />
+        <br /><br />
+
+        <label for="endereco">Endereço:</label>
+        <input
+          type="text"
+          id="endereco"
+          name="endereco"
+          minlength="5"
+          maxlength="150"
+          required
+        />
+
+        <label for="numero">Nº:</label>
+        <input
+          type="text"
+          id="numero"
+          name="numero"
+          minlength="1"
+          maxlength="10"
+          required
+        />
+        <br /><br />
+
+        <label for="bairro">Bairro:</label>
+        <input
+          type="text"
+          id="bairro"
+          name="bairro"
+          minlength="2"
+          maxlength="50"
+          required
+        />
+
+        <label for="cep">CEP (formato: 00000-000):</label>
+        <input
+          type="text"
+          id="cep"
+          name="cep"
+          pattern="\d{5}-\d{3}"
+          title="Digite o CEP no formato 00000-000"
+          required
+        />
+        <br /><br />
+
+        <label for="telefone">Telefone (formato: (00) 00000-0000):</label>
+        <input
+          type="tel"
+          id="telefone"
+          name="telefone"
+          pattern="\(\d{2}\)\s\d{4,5}-\d{4}"
+          title="Digite o telefone no formato (99) 99999-9999"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          minlength="5"
+          maxlength="100"
+          required
+        />
+        <br /><br />
+
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input
+          type="date"
+          id="data_nascimento"
+          name="data_nascimento"
+          required
+        />
+
+        <label for="idade">Idade:</label>
+        <input
+          type="number"
+          id="idade"
+          name="idade"
+          min="0"
+          max="150"
+          required
+        />
+
+        <label for="genero">Gênero:</label>
+        <input
+          type="text"
+          id="genero"
+          name="genero"
+          minlength="2"
+          maxlength="30"
+          required
+        />
+        <br /><br />
+
+        <label for="escolaridade">Escolaridade:</label>
+        <input
+          type="text"
+          id="escolaridade"
+          name="escolaridade"
+          minlength="3"
+          maxlength="50"
+          required
+        />
+
+        <label for="profissao">Profissão:</label>
+        <input
+          type="text"
+          id="profissao"
+          name="profissao"
+          minlength="3"
+          maxlength="50"
+          required
+        />
+        <br /><br />
+
+        <label for="naturalidade">Naturalidade:</label>
+        <input
+          type="text"
+          id="naturalidade"
+          name="naturalidade"
+          minlength="3"
+          maxlength="50"
+          required
+        />
+
+        <label for="estado_civil">Estado Civil:</label>
+        <input
+          type="text"
+          id="estado_civil"
+          name="estado_civil"
+          minlength="3"
+          maxlength="30"
+          required
+        />
+
+        <label for="religiao">Religião:</label>
+        <input
+          type="text"
+          id="religiao"
+          name="religiao"
+          minlength="3"
+          maxlength="30"
+          required
+        />
+        <br /><br />
+
+        <label>Aluno UNIME:</label>
+        <label
+          ><input type="radio" name="aluno_unime" value="nao" required />
+          Não</label
+        >
+        <label
+          ><input type="radio" name="aluno_unime" value="sim" required />
+          Sim</label
+        >
+
+        <label for="curso">Curso:</label>
+        <input
+          type="text"
+          id="curso"
+          name="curso"
+          minlength="2"
+          maxlength="50"
+          required
+        />
+
+        <label for="semestre">Semestre:</label>
+        <input
+          type="number"
+          id="semestre"
+          name="semestre"
+          min="1"
+          max="20"
+          required
+        />
+
+        <label for="turno">Turno:</label>
+        <input
+          type="text"
+          id="turno"
+          name="turno"
+          minlength="3"
+          maxlength="20"
+          required
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>2 - DADOS SOBRE A FAMÍLIA</legend>
+
+        <label for="nome_pai">Nome do Pai:</label>
+        <input
+          type="text"
+          id="nome_pai"
+          name="nome_pai"
+          minlength="3"
+          maxlength="100"
+          required
+        />
+
+        <label for="idade_pai">Idade:</label>
+        <input
+          type="number"
+          id="idade_pai"
+          name="idade_pai"
+          min="0"
+          max="150"
+          required
+        />
+        <br /><br />
+
+        <label for="profissao_pai">Profissão:</label>
+        <input
+          type="text"
+          id="profissao_pai"
+          name="profissao_pai"
+          minlength="3"
+          maxlength="50"
+          required
+        />
+
+        <label for="escolaridade_pai">Escolaridade:</label>
+        <input
+          type="text"
+          id="escolaridade_pai"
+          name="escolaridade_pai"
+          minlength="3"
+          maxlength="50"
+          required
+        />
+        <br /><br />
+
+        <label for="nome_mae">Nome da Mãe:</label>
+        <input
+          type="text"
+          id="nome_mae"
+          name="nome_mae"
+          minlength="3"
+          maxlength="100"
+          required
+        />
+
+        <label for="idade_mae">Idade:</label>
+        <input
+          type="number"
+          id="idade_mae"
+          name="idade_mae"
+          min="0"
+          max="150"
+          required
+        />
+        <br /><br />
+
+        <label for="profissao_mae">Profissão:</label>
+        <input
+          type="text"
+          id="profissao_mae"
+          name="profissao_mae"
+          minlength="3"
+          maxlength="50"
+          required
+        />
+
+        <label for="escolaridade_mae">Escolaridade:</label>
+        <input
+          type="text"
+          id="escolaridade_mae"
+          name="escolaridade_mae"
+          minlength="3"
+          maxlength="50"
+          required
+        />
+        <br /><br />
+
+        <label>Renda Familiar:</label>
+        <label
+          ><input
+            type="radio"
+            name="renda_familiar"
+            value="ate_2_salarios"
+            required
+          />
+          Até 2 salários mínimos</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="renda_familiar"
+            value="mais_2_salarios"
+            required
+          />
+          Mais que 2 salários mínimos</label
+        >
+        <br /><br />
+
+        <label for="responsavel_triagem"
+          >Responsável presente na triagem:</label
+        >
+        <input
+          type="text"
+          id="responsavel_triagem"
+          name="responsavel_triagem"
+          minlength="3"
+          maxlength="100"
+          required
+        />
+      </fieldset>
+
+      <br />
+      <button type="submit">Enviar Formulário</button>
+      <button type="reset">Limpar Dados</button>
+    </form>
+  </body>
+</html>
